@@ -1,0 +1,26 @@
+[
+  {
+    "firstname": "Fabien",
+    "lastname": "Potencier",
+    "dateOfBirth": "1979-02-22",
+    "creatorOf": "Symfony",
+    "picture": "https://pbs.twimg.com/profile_images/1126770148092698625/nI58pL5O_200x200.png",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cumque facilis harum id ipsam necessitatibus veniam! Adipisci alias delectus harum impedit ipsum, iste laboriosam natus possimus provident ratione velit voluptatibus? "
+  },
+  {
+    "firstname": "Astley",
+    "lastname": "Rick",
+    "dateOfBirth": "1982-01-01",
+    "creatorOf": "Rick Roll",
+    "picture": "https://kultt.fr/wp-content/uploads/2022/09/RickAstley-ad2022-uai-900x506.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cumque facilis harum id ipsam necessitatibus veniam! Adipisci alias delectus harum impedit ipsum, iste laboriosam natus possimus provident ratione velit voluptatibus? "
+  },
+  {
+    "firstname": "Victor",
+    "lastname": "Julien",
+    "dateOfBirth": "1984-01-01",
+    "creatorOf": "On est d'accord les gars ?",
+    "picture": "https://image-uniservice.linternaute.com/image/450/3/1081503742/5213833.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cumque facilis harum id ipsam necessitatibus veniam! Adipisci alias delectus harum impedit ipsum, iste laboriosam natus possimus provident ratione velit voluptatibus? "
+  }
+]

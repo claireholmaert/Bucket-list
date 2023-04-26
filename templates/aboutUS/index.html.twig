@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>Ceci est la page About us</p>
+    <ul>
+    {% for key, value in tab %}
+        <li>{{ value.firstname == 'Fabien' ? '❤'~value.firstname : value.firstname}}</li>
+        <li>{{ value.lastname }}</li>
+        <li>{{ value.dateOfBirth | date('d/m/Y') }}</li>
+        <img src="{{ value.picture }}" alt="{{ value.firstname }}">
+    {% endfor %}
+    </ul>
+{% endblock %}
