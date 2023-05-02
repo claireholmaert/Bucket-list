@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="enTete">
-                <img src="{{ asset('images/logo.png') }}" alt="logo du site" id="imgLogo">
+                <a href="{{ path('main_index') }}"><img src="{{ asset('images/logo.png') }}" alt="logo du site" id="imgLogo"></a>
                 <h1>Bucket-list</h1>
             </div>
             <nav>
@@ -23,6 +23,13 @@
                     <li><a href="{{ path('main_about_us') }}">About us</a></li>
                 </ul>
             </nav>
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="flash-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
         </header>
         <main>
             {% block body %}{% endblock %}

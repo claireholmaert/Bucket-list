@@ -2,4 +2,14 @@
 
 {% block body %}
     <p>Ceci est la page All wishes</p>
+    <a href="{{ path('wish_ajouter') }}">Ajouter une tache</a>
+    <ul>
+        {% for value in tabWish %}
+
+            <li><a href="{{ path('wish_detail', {'detail' : value.id})}}">{{ value.title}}</a>
+                <span>{{ value.dateCreated | date('d/m/Y H:i:s')}}</span></li>
+
+
+        {% endfor %}
+    </ul>
 {% endblock %}

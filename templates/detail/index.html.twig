@@ -1,1 +1,13 @@
 {% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>Ceci est la page détail</p>
+    <h2>{{ detail.title }}</h2>
+    <ul>
+        <li>{{ detail.wishes.name }}</li>
+        <li>{{ detail.description ? detail.description : 'Aucune description'}}</li>
+        <li>{{ detail.author }}</li>
+        <li>{{ detail.isPublished ? 'publié' : 'non-publié' }}</li>
+        <li>{{ detail.dateCreated | date('d/m/Y H:i:s') }}</li>
+    </ul>
+{% endblock %}

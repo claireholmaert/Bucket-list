@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,6 +16,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #a3b18a;
 }
 
 nav ul li {
@@ -23,8 +25,52 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: darkred;
+    color: #dad7cd;
 }
+
+nav ul li a:hover{
+    color: #e5383b;
+    transition: color 0.5s;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #d90429;
+}
+
+ul li a:hover{
+    color: #adc178;
+    transition: color 0.5s;
+}
+
+h2 {
+    margin-left: 20px;
+    animation-name: bounceInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes bounceInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 footer {
     display: flex;
